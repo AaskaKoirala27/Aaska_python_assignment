@@ -9,7 +9,7 @@ is_float = float(number)
 is_int = int(is_float)
 is_str = str(is_float)
 
-# used f-string: because it allows variables directly inside the brackets {}. easy for now.
+# used f-string: variables lai directly brackets bhitra rakhna milyo {}. easy for now.
 print(f"Original float: {is_float: .3f}") #float upto 3 decimal places only
 print(f"Converted to integer: {is_int}")
 print(f'Converted to string: "{is_str}"')
