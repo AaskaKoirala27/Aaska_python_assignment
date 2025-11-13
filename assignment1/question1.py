@@ -5,11 +5,11 @@ Displays all three values (original float, integer, and string) using string for
 '''
 
 number = input("Enter a decimal number: ")
-float_num = float(number)
-int_num = int(float_num)
-str_num = str(float_num)
+is_float = float(number)
+is_int = int(is_float)
+is_str = str(is_float)
 
 # used f-string: because it allows variables directly inside the brackets {}. easy for now.
-print(f"Original float: {float_num: .3f}") #float upto 3 decimal places only
-print(f"Converted to integer: {int_num}")
-print(f'Converted to string: "{str_num}"')
+print(f"Original float: {is_float: .3f}") #float upto 3 decimal places only
+print(f"Converted to integer: {is_int}")
+print(f'Converted to string: "{is_str}"')
