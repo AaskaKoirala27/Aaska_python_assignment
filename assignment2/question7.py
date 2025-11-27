@@ -1,5 +1,18 @@
-'''Write a function largest_word(sentence) that takes a sentence as input and returns the longest word in the sentence. If there are multiple words of the same length, return the first one that appears.
-Hint: Split the sentence into words using .split(), then compare the lengths of the words to find the longest one.
-largest_word("Python programming is awesome") 
-# Output: "programming"
+'''Write a function to_title_case(sentence) that takes a sentence as input and returns the sentence in title case, where the first letter of each word is capitalized.
+
+to_title_case("hello world from python") 
+# Output: "Hello World From Python"
 '''
+
+def to_title_case(sentence):
+    words = sentence.split()
+    title_sentence = "" 
+
+    for word in words:
+        if word:  
+            title_sentence += word[0].upper() + word[1:].lower() + " "
+    
+    return title_sentence.strip()  
+
+input_sentence = input("Enter a sentence: ")
+print("Title case sentence:", to_title_case(input_sentence))

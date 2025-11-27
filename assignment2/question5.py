@@ -1,10 +1,20 @@
-'''Write a Python program that does the following:
-Prompts the user to enter the name of the book they want.
-Prompts the user to enter the number of copies they want to buy.
-Checks if the book exists in the books dictionary.
-Prints the following messages based on availability:
-- "Available": If the book is in the dictionary and there are enough copies to fulfill the user's request.
-- "Partially Available": If the book is in the dictionary, but there are fewer copies than the user wants.
-- "Unavailable": If the book is not in the dictionary.
-Important: Your program should handle the case where the user might enter something that is not a valid number of copies (e.g., letters, a blank input). Provide a clear message to the user if this happens and ask for number of copies again if the input by user is not an integer type
+'''Write a program in python which takes a list of words as input and store the frequency of each word in dictionary  
+Input [“This”,”is”,”good”,”is”]
+Output {“this”:1,”is”:2}
 '''
+
+words = input("Enter words separated by spaces: ").split()
+
+frequency = {}
+
+for word in words:
+    w = word.lower()
+    if w in frequency:
+        frequency[w] += 1
+    else:
+        frequency[w] = 1
+
+print("Word frequency:", frequency)
+
+
+
